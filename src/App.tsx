@@ -138,7 +138,7 @@ function App() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              DevPortfolio
+              Portfolio
             </div>
             <div className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('home')} className="hover:text-blue-400 transition-colors duration-300">Home</button>
@@ -175,14 +175,12 @@ function App() {
                 Ready to contribute to dynamic development teams and grow in the tech industry.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
-                <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25">
+               <a href="files/MuhammedAnshif_Resume.pdf" download="MuhammedAnshif_Resume.pdf"
+                className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25">
                   <Download className="inline mr-2 h-5 w-5" />
-                  Download Resume
-                </button>
-                <button 
-                  onClick={() => scrollToSection('contact')}
-                  className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/25 transform hover:scale-105"
-                >
+                    Download Resume
+               </a>
+                <button onClick={() => scrollToSection('contact')} className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/25 transform hover:scale-105">
                   <Mail className="inline mr-2 h-5 w-5" />
                   Get In Touch
                 </button>
